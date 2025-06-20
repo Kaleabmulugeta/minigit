@@ -4,7 +4,11 @@
 
 namespace fs = std::filesystem;
 using namespace std;
-
+/**
+ * Initializes a new mini-git repository in the current directory.
+ * Creates the necessary directories and files for the repository structure.
+ * Prompts the user for author name and email, which are saved in the config file.
+ */
 void initialize_repo(void)
 {
     fs::path git_dir = ".mini-git";

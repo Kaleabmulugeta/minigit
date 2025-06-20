@@ -1,11 +1,18 @@
 #include <iostream>
 #include <filesystem>
 #include <fstream>
-#include "../helpers.hpp"
+#include "helpers.hpp"
 
 using namespace std;
 namespace fs = std::filesystem;
 
+/**
+ * Adds a file to the mini-git repository.
+ * If the file is modified, it saves the object and updates the index.
+ * If the file is not modified, it informs the user.
+ *
+ * @param path_to_file The path to the file to be added.
+ */
 void add_file(string path_to_file)
 {
     fs::path git_dir = ".mini-git";

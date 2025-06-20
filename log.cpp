@@ -3,8 +3,18 @@
 #include <sstream>
 #include <string>
 #include <ctime>
-#include "../helpers.hpp"
+#include "helpers.hpp"
 
+/**
+ * log - Display the commit history of the repository.
+ * It reads the HEAD reference, traverses the commit history,
+ * and prints commit details including hash, author, date, and message.
+ * If HEAD is not found or no commits exist, it displays an error message.
+ * If the commit object is not found, it also displays an error message.
+ * The output is formatted to show each commit in reverse chronological order.
+ * Each commit is displayed with its hash, author, date, and message.
+ * The function handles errors gracefully, providing feedback to the user.
+ */
 void log(void)
 {
     // Step 1: Read HEAD

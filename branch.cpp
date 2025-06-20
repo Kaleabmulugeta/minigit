@@ -3,6 +3,14 @@
 #include <string>
 
 using namespace std;
+/**
+ * branch - Create a new branch in the mini-git repository.
+ * This function creates a new branch with the specified name,
+ * copying the current commit hash from the current branch.
+ * If the branch already exists, it outputs an error message.
+ * If HEAD is not found or has an invalid format, it also outputs an error message.
+ * The new branch is created in the .mini-git/refs/heads directory.
+ */
 void branch(const string &branchName)
 {
     string newBranchPath = ".mini-git/refs/heads/" + branchName;

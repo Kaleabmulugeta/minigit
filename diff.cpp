@@ -5,11 +5,14 @@
 #include <set>
 #include <filesystem>
 #include <sstream>
-#include "../helpers.hpp"
+#include "helpers.hpp"
 
 using namespace std;
 
-// Compare two commits
+/**
+ * diffCommits - Compare two commits and show differences in tracked files.
+ * It lists files that are unchanged, modified, added, or removed between the two commits.
+ */
 void diffCommits(const string &commitHash1, const string &commitHash2)
 {
     string commit1 = readFile(".mini-git/objects/" + commitHash1);

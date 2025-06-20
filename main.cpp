@@ -3,6 +3,11 @@
 #include <vector>
 #include "commands.hpp"
 
+/**
+ * Main function for the mini-git command line tool.
+ * Parses command line arguments and executes the corresponding git command.
+ * Supported commands: init, add, commit, log, branch, checkout, merge, diff.
+ */
 int main(int argc, char *argv[])
 {
     if (argc < 2)

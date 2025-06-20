@@ -6,13 +6,16 @@
 #include <sstream>
 #include <vector>
 #include <openssl/sha.h>
-#include "../helpers.hpp"
+#include "helpers.hpp"
 
 using namespace std;
 namespace fs = std::filesystem;
 
-// Utility functions
-
+/**
+ * checkout - Switch branches or restore working tree files
+ * @ref: The branch name or commit hash to switch to.
+ * @force: If true, force checkout even if there are modified or untracked files.
+ */
 void checkout(const string &ref, bool force = false)
 {
     string commitHash;

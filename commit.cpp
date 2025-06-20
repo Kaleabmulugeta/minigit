@@ -7,11 +7,18 @@
 #include <map>
 #include <chrono>
 #include <iomanip>
-#include "../helpers.hpp"
+#include "helpers.hpp"
 
 namespace fs = std::filesystem;
 using namespace std;
 
+/**
+ * Commits the current state of the repository with a message.
+ * It generates a tree object, creates a commit object, updates the current branch,
+ * and clears the index.
+ *
+ * @param message The commit message.
+ */
 void commit(const string &message)
 {
     string head = ".mini-git/HEAD";
