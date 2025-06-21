@@ -1,4 +1,4 @@
-# 🚀 mini-git
+# Mini-git
 
 > A minimal version control system inspired by Git, written in C++
 
@@ -112,18 +112,11 @@ Perfect for understanding Git internals! 🧠
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 <div align="center">
 
 **Built with ❤️ for learning version control systems**
 
-[⭐ Star this repo](https://github.com/Kaleabmulugeta/mini-git) • [🐛 Report issues](https://github.com/Kaleabmulugeta/mini-git/issues) • [📖 View docs](https://github.com/Kaleabmulugeta/mini-git/wiki)
+[⭐ Star this repo](https://github.com/Kaleabmulugeta/mini-git) • [🐛 Report issues](https://github.com/Kaleabmulugeta/mini-git/issues) 
 
 </div> 
